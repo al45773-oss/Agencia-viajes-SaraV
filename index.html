@@ -46,6 +46,7 @@
     <!-- FORMULARIO PRINCIPAL -->
     <div class="main-form">
         <!-- SECCIÓN 1: COTIZACIÓN INDIVIDUAL -->
+    <form>
         <section class="form-section">
             <h2 class="section-title">Cotización Individual</h2>
             
@@ -94,10 +95,12 @@
                 <input type="number" id="dias-individual" name="dias-individual" min="1" max="365">
             </div>
 
-            <button type="submit" class="submit-btn">Cotización Individual</button>
+            <button type="submit" onclick="calcular()" class="submit-btn">Cotización Individual</button>
         </section>
+        </form>
 
         <!-- SECCIÓN 2: PAQUETES -->
+       <form>
         <section class="form-section">
             <h2 class="section-title">Paquetes (4 personas) </h2>
             
@@ -135,9 +138,10 @@
                 </div>
             </div>
 
-            <button type="submit" class="submit-btn">Cotización Paquetes</button>
+            <button type="submit" onclick="calcular()" class="submit-btn">Cotización Paquetes</button>
         </section>
     </div>
+    </form>
 
     <!-- PIE DE PÁGINA -->
     <footer class="footer">
