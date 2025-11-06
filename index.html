@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Travel Agency</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- ENCABEZADO -->
+    <header class="header">
+            <img class="panoramic-image" src="img/Viaje01.png" alt="">
+        <div class="logo-section">
+            <img class="logo" src="img/Logo.png" alt="">
+            <div class="slogan">... tu pase al mundo de tus sueños</div>
+        </div>
+    </header>
+
+    <div class="countries-bar">
+        Estados Unidos • Francia • China • Suramérica • Italia • Japón • Brasil • España
+    </div>
+
+    <!-- DATOS DEL CLIENTE -->
+    <section class="client-data">
+        <div class="client-row">
+            <div class="client-field">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+            </div>
+            <div class="client-field">
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion">
+            </div>
+            <div class="client-field">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+            </div>
+            <div class="client-field">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULARIO PRINCIPAL -->
+    <div class="main-form">
+        <!-- SECCIÓN 1: COTIZACIÓN INDIVIDUAL -->
+        <section class="form-section">
+            <h2 class="section-title">Cotización Individual</h2>
+            
+            <div class="form-group">
+                <label>Opciones de Vuelo:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="vuelo" value="sin-avion"> Sin Avión (999 MXN)</label>
+                    <label><input type="radio" name="vuelo" value="ida"> Avión de IDA (2,499 MXN)</label>
+                    <label><input type="radio" name="vuelo" value="ida-vuelta"> Avión de IDA y VUELTA (5,999 MXN)</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Opciones de Hospedaje:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="hospedaje" value="sin-hotel"> Sin Hotel (499 MXN)</label>
+                    <label><input type="radio" name="hospedaje" value="sencilla"> Habitación Sencilla (799 MXN)</label>
+                    <label><input type="radio" name="hospedaje" value="doble"> Habitación Doble(999 MXN)</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="adultos">Número de Adultos (865 MXN por persona):</label>
+                <select id="adultos" name="adultos">
+                    <option value="1">1 Adulto</option>
+                    <option value="2">2 Adultos</option>
+                    <option value="3">3 Adultos</option>
+                    <option value="4">4 Adultos</option>
+                    <option value="5">5 Adultos</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="menores">Número de Menores (437 MXN por niño):</label>
+                <select id="menores" name="menores">
+                    <option value="0">0 Menores</option>
+                    <option value="1">1 Menor</option>
+                    <option value="2">2 Menores</option>
+                    <option value="3">3 Menores</option>
+                    <option value="4">4 Menores</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="dias-individual">Número de Días (769 MXN por día):</label>
+                <input type="number" id="dias-individual" name="dias-individual" min="1" max="365">
+            </div>
+
+            <button type="submit" class="submit-btn">Cotización Individual</button>
+        </section>
+
+        <!-- SECCIÓN 2: PAQUETES -->
+        <section class="form-section">
+            <h2 class="section-title">Paquetes (4 personas) </h2>
+            
+            <div class="form-group">
+                <label>Destinos Turísticos:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="destino" value="suramerica"> SurAmérica Colorida (7,999 MXN)</label>
+                    <label><input type="radio" name="destino" value="europa"> Europa de Ensueño(21,999 MXN)</label>
+                    <label><input type="radio" name="destino" value="africa"> África Salvaje (17,999 MXN)</label>
+                    <label><input type="radio" name="destino" value="asia"> Asia de Tradiciones(25,999 MXN)</label>
+                    <label><input type="radio" name="destino" value="norteamerica"> Norteamérica Moderna(12,999 MXN)</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="dias-paquete">Número de Días (899 MXN por día):</label>
+                <input type="number" id="dias-paquete" name="dias-paquete" min="1" max="365">
+            </div>
+
+            <div class="form-group">
+                <label>Paquete Especial (19,999 MXN):</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="especial" value="crucero"> Crucero Romántico (7 días)</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Opciones Extra (699 MXN por opcion) :</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="extras" value="bebidas"> Bebidas Alcohólicas</label>
+                    <label><input type="checkbox" name="extras" value="buceo"> Clases de Buceo</label>
+                    <label><input type="checkbox" name="extras" value="expedicion"> Tour de Expedición</label>
+                    <label><input type="checkbox" name="extras" value="fotografias"> Paquete de Fotografías</label>
+                    <label><input type="checkbox" name="extras" value="pesca"> Pesca en Altamar</label>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Cotización Paquetes</button>
+        </section>
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+        <p><strong>Ricardo Arturo Elizalde</strong></p>
+        <p>Matrícula: 12345678</p>
+        <p>WEB PAGE</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
